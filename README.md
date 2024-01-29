@@ -40,6 +40,7 @@ $ npm run start
 
 # watch mode
 $ npm run start:dev
+I recommend this as it doesn't need to refresh after every change though, it updates itself.
 
 # production mode
 $ npm run start:prod
@@ -64,10 +65,15 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
+- Author - [Kamil Myśliwiec](https://twitter.com/Elissa177)
 - Website - [https://nestjs.com](https://nestjs.com/)
 - Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
   Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+  I managed to create my first API in NestJs
+![Screenshot 2024-01-29 100422](https://github.com/Elissa-DI/first-api/assets/122690968/7b77a66c-6d49-4390-bf6f-7316c658f927)
+
+  

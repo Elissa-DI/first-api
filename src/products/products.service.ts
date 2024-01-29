@@ -23,11 +23,17 @@ export class ProductsService {
   }
   updateProduct(productId: string, title: string, desc: string, price: number) {
     const [product, index] = this.findProduct(productId);
-    const updatedProduct = {...product};
-    if(title) {
-        updatedProduct.title = title;
+    const updatedProduct = { ...product };
+    if (title) {
+      updatedProduct.title = title;
     }
-    this.products[index] = {...products, }
+    if (desc) {
+      updatedProduct.description = desc;
+    }
+    if (price) {
+      updatedProduct.price = price;
+    }
+    this.products[index] = updatedProduct;
   }
 
   private findProduct(id: string): [Product, number] {
@@ -37,5 +43,10 @@ export class ProductsService {
       throw new NotFoundException('Could not find a product😒');
     }
     return [product, productIndex];
+  }
+
+  deleteProduct(prodId: string) {
+    const index = this.findProduct(prodId)[1];
+    this.products.splice(index, 1);
   }
 }
